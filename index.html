@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit2-02-HTML -->
+<!-- ICS2O-Unit2-05-HTML -->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
@@ -32,34 +32,34 @@
         </div>
       </header>
       <main class = "mdl-layout__content">
-        <h3>Please enter the following:</h3>
+        <h3>Please enter your employment information:</h3>
         <!-- Simple Textfield -->
         <form action="#">
-          <p>Street Name</p>
+          <p>Number of hours worked:</p>
          <div class="mdl-textfield mdl-js-textfield">
-           <input class="mdl-textfield__input" type="text" id="street-name">
-           <label class="mdl-textfield__label" for="street-name">Street Name...</label>
+           <input class="mdl-textfield__input" type="text" id="numbers-hours">
+           <label class="mdl-textfield__label" for="numbers-hours">Numbers of Hours...</label>
          </div>
         </form>
         <!-- Numeric Textfield -->
         <form action="#">
-          <p>Street Number</p>
+          <p>Hourly rate:</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-number">
-            <label class="mdl-textfield__label" for="street-number">Street Number...</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hourly-rate">
+            <label class="mdl-textfield__label" for="hourly-rate">Hourly Rate...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="enterClicked()"
         >
-          Enter
+          Pay
         </button>
         <br>
         <br>
         <br>
-        <div id="user-info">
-          <div id="address"></div>
+        <div id="salary-info">
+          <div id="salary"></div>
         </div>
       </main>
     </div>
